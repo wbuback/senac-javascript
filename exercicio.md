@@ -177,3 +177,59 @@ Pendentes:   3
 | Como colocar texto em maiúsculo | `texto.toUpperCase()` |
 | Como contar itens que satisfazem condição | `lista.filter(t => t.concluida).length` |
 
+## Cola - Estrutura inicial do arquivo
+
+Crie um arquivo `exercicio.js` e comece com esta estrutura:
+
+```javascript
+// ===================================================
+// Exercício — Mini Taskschool
+// Nome: ___________________________
+// ===================================================
+
+// Lista que vai guardar as tarefas (array vazio por enquanto)
+const tarefas = []
+
+// --- Escreva suas funções aqui ---
+
+function criarTarefa(titulo, prioridade) {
+  // seu código aqui
+}
+
+function adicionarTarefa(lista, titulo, prioridade) {
+  // seu código aqui
+}
+
+function listarTarefas(lista) {
+  // seu código aqui
+}
+
+function filtrarPorPrioridade(lista, prioridade) {
+  // seu código aqui
+}
+
+function gerarRelatorio(lista) {
+  // seu código aqui
+}
+
+// --- Teste seu código aqui ---
+
+adicionarTarefa(tarefas, "Estudar variáveis",  "alta")
+adicionarTarefa(tarefas, "Praticar condicionais", "alta")
+adicionarTarefa(tarefas, "Fazer exercícios",   "media")
+adicionarTarefa(tarefas, "Revisar anotações",  "baixa")
+adicionarTarefa(tarefas, "",                   "alta")   // deve dar erro
+
+listarTarefas(tarefas)
+
+// Marcar a primeira tarefa como concluída manualmente
+tarefas[0].concluida = true
+
+console.log("\n--- Somente as urgentes ---")
+const urgentes = filtrarPorPrioridade(tarefas, "alta")
+urgentes.forEach(t => console.log("  🔴", t.titulo))
+
+gerarRelatorio(tarefas)
+```
+
+
