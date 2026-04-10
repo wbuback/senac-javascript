@@ -1,5 +1,5 @@
 # Exercício — Mini Taskschool em JavaScript
-**Etapas 1 a 5 | Duração estimada: 1 aula (2–3 horas)**
+**Etapas 1 a 5**
 
 ---
 
